@@ -1,7 +1,12 @@
 <?php
 
-function test() {
-    echo 'hello world';
-}
+use PHPUnit\Framework\TestCase;
 
-test();
+class MyTest extends TestCase {
+
+    public function testEquals() {
+	$a = [];
+	$this->assertEquals(0, count($a));
+    }
+
+}
